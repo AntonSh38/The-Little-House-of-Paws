@@ -26,20 +26,390 @@
   </head>
 
   <body>
-    <!-- inject:src="./partials/loader.html" -->
-    <!-- inject:src="./partials/header.html" -->
+    <span class="loader is-hidden"></span>
+
+    
+
 
     <main>
-      <!-- inject:src="./partials/hero.html" -->
-      <!-- inject:src="./partials/pets.html" -->
-      <!-- inject:src="./partials/about.html" -->
-      <!-- inject:src="./partials/faq.html" -->
-      <!-- inject:src="./partials/stories.html" -->
+      <!-- Loads the specified .html file -->
+      <section class="hero section">
+  <picture>
+    <source
+      srcset="/project_team_js2/assets/hero-desk-2x-UAKhRdl4.webp 2x, /project_team_js2/assets/hero-desk-1x-C1GIli2I.webp 1x"
+      media="(min-width: 1440px)"
+      type="image/webp"
+    />
+    <source
+      srcset="/project_team_js2/assets/hero-tab-2x-v2ucpNEL.webp 2x, /project_team_js2/assets/hero-tab-1x--e56KGQB.webp 1x"
+      media="(min-width: 768px)"
+      type="image/webp"
+    />
+    <source
+      srcset="/project_team_js2/assets/hero-mob-2x-YouD-h_5.webp 2x, /project_team_js2/assets/hero-mob-1x-BV5jtxun.webp 1x"
+      type="image/webp"
+    />
+
+    <img src="/project_team_js2/assets/hero-mob-1x-BV5jtxun.webp" alt="Hero image" class="hero-img" />
+  </picture>
+
+  <div class="container hero-container">
+    <h1 class="hero-title">
+      Кожне життя має значення. Знайди свого вірного друга.
+    </h1>
+    <p class="hero-text">
+      Сотні котиків та собачок у притулку Хатинка Лапок чекають на свою родину.
+      Подаруйте їм дім.
+    </p>
+
+    <button class="btnfirst hero-btn" href="#stories">Подивитись історі</button>
+  </div>
+</section>
+
+      
+      <section class="about-container container">
+  <div class="section-about">
+    <h2 class="about-title">Чому Хатинка Лапок</h2>
+    <div class="about-js">
+      <p class="about-text">
+        Все почалося у 2015 році з кількох небайдужих людей та одного
+        врятованого собаки. Сьогодні ми — один з найбільших притулків у регіоні,
+        але наша мета незмінна: дати другий шанс тим, кого зрадили.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="faq">
+  <h2 class="faq-title">Все, що ви хотіли знати</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <h3 class="accordion-title">
+        Я мрію про пухнастика! Що мені потрібно зробити, щоб забрати хвостика
+        додому?
+      </h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="none"
+      >
+        <path
+          fill="#02060A"
+          d="M11.648 13.352H6.202a.821.821 0 0 1-.606-.247.83.83 0 0 1-.245-.61c0-.24.081-.442.245-.604a.829.829 0 0 1 .606-.242h5.446V6.202c0-.24.083-.442.247-.608a.824.824 0 0 1 .61-.25.81.81 0 0 1 .604.25.839.839 0 0 1 .243.608v5.447h5.446a.83.83 0 0 1 .609.247.824.824 0 0 1 .249.609.81.81 0 0 1-.25.604.84.84 0 0 1-.608.243h-5.446v5.446a.82.82 0 0 1-.247.606.83.83 0 0 1-.61.246.816.816 0 0 1-.604-.246.829.829 0 0 1-.243-.606v-5.446Z"
+        />
+      </svg>
+    </div>
+    <div class="accordion-content">
+      <p class="accordion-text">
+        Це чудово, що ви готові подарувати дім одному з наших підопічних! Ми
+        дуже раді будемо вам у цьому допомогти. Процес «усиновлення» у нас
+        простий та зрозумілий:
+      </p>
+      <ol class="accordion-list">
+        <li>
+          Оберіть друга: Придивіться до наших хвостиків у розділі «Знайди
+          друга».
+        </li>
+        <li>
+          Залиште заявку: Коли відчуєте, що це «ваша» тваринка, натискайте
+          кнопку «Взяти додому» та заповніть коротку анкету.
+        </li>
+        <li>
+          Поговоріть з куратором: Наш волонтер зателефонує вам, щоб
+          познайомитись ближче, розповісти про характер тваринки та відповісти
+          на всі ваші питання.
+        </li>
+        <li>
+          Приїжджайте знайомитись: Якщо ви ідеально підходите одне одному, ми
+          домовимось про зустріч у притулку.
+        </li>
+        <li>
+          Дорога додому: Після знайомства та підписання договору про
+          відповідальне утримання, ваш новий друг поїде з вами у своє нове,
+          щасливе життя!
+        </li>
+      </ol>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-title">
+        Як мені найкраще підготувати свій дім та родину до появи хвостика?
+      </h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="none"
+      >
+        <path
+          fill="#02060A"
+          d="M11.648 13.352H6.202a.821.821 0 0 1-.606-.247.83.83 0 0 1-.245-.61c0-.24.081-.442.245-.604a.829.829 0 0 1 .606-.242h5.446V6.202c0-.24.083-.442.247-.608a.824.824 0 0 1 .61-.25.81.81 0 0 1 .604.25.839.839 0 0 1 .243.608v5.447h5.446a.83.83 0 0 1 .609.247.824.824 0 0 1 .249.609.81.81 0 0 1-.25.604.84.84 0 0 1-.608.243h-5.446v5.446a.82.82 0 0 1-.247.606.83.83 0 0 1-.61.246.816.816 0 0 1-.604-.246.829.829 0 0 1-.243-.606v-5.446Z"
+        />
+      </svg>
+    </div>
+    <div class="accordion-content">
+      <p class="accordion-text">
+        Чудове питання, яке показує вашу турботу! Переїзд — це завжди невеликий
+        стрес для тваринки, але правильна підготовка зробить цей процес легким і
+        радісним. Ось кілька порад:
+      </p>
+      <ul class="accordion-bullets">
+        <li>
+          Безпечний простір: Переконайтесь, що на вікнах є сітки, а дроти та
+          побутова хімія сховані.
+        </li>
+        <li>
+          Особисті речі: Підготуйте для хвостика дві мисочки (для їжі та води),
+          лежанку чи будиночок, лоток з наповнювачем для котика або повідець і
+          нашийник для собачки.
+        </li>
+        <li>
+          Сімейна розмова: Обговоріть з рідними майбутні обов'язки. Важливо, щоб
+          усі були готові до появи нового мешканця.
+        </li>
+        <li>
+          Терпіння та любов: Дайте тваринці час, щоб звикнути. Не квапте її,
+          будьте поруч, розмовляйте лагідним голосом — і ваша любов творитиме
+          дива!
+        </li>
+      </ul>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-title">
+        Чи можу я бути впевненим, що тваринка здорова? Розкажіть про щеплення.
+      </h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="none"
+      >
+        <path
+          fill="#02060A"
+          d="M11.648 13.352H6.202a.821.821 0 0 1-.606-.247.83.83 0 0 1-.245-.61c0-.24.081-.442.245-.604a.829.829 0 0 1 .606-.242h5.446V6.202c0-.24.083-.442.247-.608a.824.824 0 0 1 .61-.25.81.81 0 0 1 .604.25.839.839 0 0 1 .243.608v5.447h5.446a.83.83 0 0 1 .609.247.824.824 0 0 1 .249.609.81.81 0 0 1-.25.604.84.84 0 0 1-.608.243h-5.446v5.446a.82.82 0 0 1-.247.606.83.83 0 0 1-.61.246.816.816 0 0 1-.604-.246.829.829 0 0 1-.243-.606v-5.446Z"
+        />
+      </svg>
+    </div>
+    <div class="accordion-content">
+      <p class="accordion-text">
+        Так, звісно. Здоров'я наших підопічних — наш головний пріоритет. Кожна
+        тваринка, яка потрапляє до нас, проходить повний огляд у ветеринара. Ми
+        гарантуємо, що:
+      </p>
+      <ul class="accordion-bullets">
+        <li>Усі хвостики оброблені від бліх та глистів.</li>
+        <li>Усі вакциновані комплексною вакциною за віком.</li>
+        <li>
+          Дорослі тварини (зазвичай від 6-8 місяців) стерилізовані/кастровані.
+        </li>
+      </ul>
+      <p class="accordion-text">
+        Разом із тваринкою ви обов'язково отримаєте її ветеринарний паспорт з
+        усіма відмітками. Якщо у когось є особливі потреби у догляді чи
+        харчуванні, ми чесно і детально про це розповімо.
+      </p>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-title">
+        Я дуже хочу допомогти, але поки не готовий до адопції. Чим я можу
+        підтримати «Хатинку лапок»?
+      </h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="none"
+      >
+        <path
+          fill="#02060A"
+          d="M11.648 13.352H6.202a.821.821 0 0 1-.606-.247.83.83 0 0 1-.245-.61c0-.24.081-.442.245-.604a.829.829 0 0 1 .606-.242h5.446V6.202c0-.24.083-.442.247-.608a.824.824 0 0 1 .61-.25.81.81 0 0 1 .604.25.839.839 0 0 1 .243.608v5.447h5.446a.83.83 0 0 1 .609.247.824.824 0 0 1 .249.609.81.81 0 0 1-.25.604.84.84 0 0 1-.608.243h-5.446v5.446a.82.82 0 0 1-.247.606.83.83 0 0 1-.61.246.816.816 0 0 1-.604-.246.829.829 0 0 1-.243-.606v-5.446Z"
+        />
+      </svg>
+    </div>
+    <div class="accordion-content">
+      <p class="accordion-text">
+        Дякуємо вам за велике серце та бажання допомогти! Кожна допомога для нас
+        безцінна. Навіть якщо ви не можете взяти тваринку, ви можете стати її
+        янголом-охоронцем. Ось як:
+      </p>
+      <ul class="accordion-bullets">
+        <li>
+          Допомогти фінансово: Ваша пожертва піде на корм, ліки, оплату
+          комунальних послуг та зарплату персоналу.
+        </li>
+        <li>
+          Стати волонтером: Нам завжди потрібні люблячі руки для прогулянок з
+          собачками, прибирання та, найголовніше, для спілкування з тваринками.
+        </li>
+        <li>
+          Подарувати необхідне: Ми завжди раді кормам, лікам, наповнювачам для
+          лотків, іграшкам, теплим ковдрам.
+        </li>
+        <li>
+          Допомогти інформаційно: Найпростіший, але дуже дієвий спосіб —
+          розповідати про нас у соцмережах. Можливо, саме ваш репост допоможе
+          комусь знайти свою долю!
+        </li>
+      </ul>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-title">
+        Мені сподобалась одна з ваших тваринок на сайті. Чи можу я приїхати, щоб
+        познайомитися з нею особисто?
+      </h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="none"
+      >
+        <path
+          fill="#02060A"
+          d="M11.648 13.352H6.202a.821.821 0 0 1-.606-.247.83.83 0 0 1-.245-.61c0-.24.081-.442.245-.604a.829.829 0 0 1 .606-.242h5.446V6.202c0-.24.083-.442.247-.608a.824.824 0 0 1 .61-.25.81.81 0 0 1 .604.25.839.839 0 0 1 .243.608v5.447h5.446a.83.83 0 0 1 .609.247.824.824 0 0 1 .249.609.81.81 0 0 1-.25.604.84.84 0 0 1-.608.243h-5.446v5.446a.82.82 0 0 1-.247.606.83.83 0 0 1-.61.246.816.816 0 0 1-.604-.246.829.829 0 0 1-.243-.606v-5.446Z"
+        />
+      </svg>
+    </div>
+    <div class="accordion-content">
+      <p class="accordion-text">
+        Авжеж! Ми віримо, що справжня магія стається лише при особистій
+        зустрічі. Щоб знайомство було комфортним і для вас, і для тваринки, ми
+        просимо вас спочатку заповнити онлайн-заявку на нашому сайті.
+      </p>
+      <p class="accordion-text">
+        Після цього з вами зв'яжеться куратор тваринки, щоб домовитись про
+        зручний час для вашого візиту. Такий підхід дозволяє нам приділити вам
+        максимум уваги та уникнути зайвого стресу для наших підопічних. З
+        нетерпінням чекаємо на знайомство!
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="stories section">
+  <div class="container">
+    <div class="stories-heading">
+      <h2 class="stories-title">Щасливі історії, що надихають</h2>
+
+      <p class="stories-text">
+        Ці хвостики вже знайшли свій дім. Ваш майбутній друг теж чекає на вас
+      </p>
+    </div>
+
+    <div class="swiper-story">
+      <div class="swiper-wrapper-story" role="list">
+        <div class="swiper-slide-story" role="listitem">
+          <div class="story-card">
+            <div class="story-rating">Рейтінг</div>
+            <p class="story-review">
+              Ми довго вагалися, чи готові до собаки, але коли побачили на сайті
+              Хатинки фото Арчі, зрозуміли — це наш. Тепер ми не уявляємо ранків
+              без його веселого гавкоту та вечорів без спільних прогулянок. Він
+              приніс у наш дім стільки сміху та любові! Дякуємо "Хатинці лапок"
+              за нашого найкращого друга.
+            </p>
+            <p class="story-author">Марина та Сергій</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-navigation-story">
+        <div class="swiper-pagination-story"></div>
+
+        <div class="navigation-buttons-story">
+          <button class="story-button-prev" type="button">
+            <svg class="story-button-icon" width="24" height="24">
+              <use href=""></use>
+            </svg>
+          </button>
+
+          <button class="story-button-next" type="button">
+            <svg class="story-button-icon" width="24" height="24">
+              <use href=""></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
 
-    <!-- inject:src="./partials/footer.html" -->
-    <!-- inject:src="./partials/navbarmodal.html" -->
-    <!-- inject:src="./partials/petmodal.html" -->
-    <!-- inject:src="./partials/ordermodal.html" -->
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo"></div>
+
+    <ul class="footer-list">
+      <li><a class="footer-link" href="#about">Про нас</a></li>
+      <li><a class="footer-link" href="#pets">Знайди друга</a></li>
+      <li><a class="footer-link" href="#faq">Часті запитання</a></li>
+      <li><a class="footer-link" href="#stories">Історії успіху</a></li>
+    </ul>
+
+    <ul class="social-list">
+      <li>
+        <a>
+          <svg class="social-icon" width="24" height="24">
+            <use href="../img/sprite.svg#icon-icon-Instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li><a href="#"> </a></li>
+    </ul>
+
+    <p class="footer-text">&#169; 2025 Хатинка лапок. Всі права захищені.</p>
+  </div>
+</footer>
+
+    
+    
+    <div class="backdrop-order">
+  <div class="modal-order">
+    <button class="modal-order-close"></button>
+
+    <h2 class="modal-order-title">Залишіть заявку на знайомство</h2>
+
+    <form class="modal-form">
+      <label class="modal-label">
+        Ім&#39;я*
+        <input
+          type="text"
+          name="name"
+          placeholder="Андрій"
+          required
+          class="modal-input"
+        />
+      </label>
+
+      <label class="modal-label">
+        Телефон*
+        <input
+          type="tel"
+          name="phone"
+          placeholder="+38 (095) 555 99 22"
+          required
+          class="modal-input"
+        />
+      </label>
+
+      <label class="modal-label">
+        Коментар
+        <textarea
+          name="comment"
+          placeholder="Напишіть ваш коментар"
+          class="modal-textarea"
+        ></textarea>
+      </label>
+
+      <button type="submit" class="modal-submit">Надіслати</button>
+    </form>
+  </div>
+</div>
+
   </body>
 </html>
