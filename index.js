@@ -19,18 +19,18 @@ import{a as l,S as f,N as x,P as y}from"./assets/vendor-Cv3ODtzV.js";(function()
           </div>
          
         </li>
-      `).join("");g.insertAdjacentHTML("beforeend",s)}const a="/project_team_js2",j=[{id:1,imageUrl:`${a}/img/about/mobile-photo/mobile1x-photo1.jpg`,text:"Все почалося у 2015 році з кількох небайдужих людей та одного врятованого собаки. Сьогодні ми — один з найбільших притулків у регіоні, але наша мета незмінна: дати другий шанс тим, кого зрадили."},{id:2,imageUrl:`${a}/img/about/mobile-photo/mobile1x-photo2.jpg`,text:'Ми рятуємо, реабілітуємо та знаходимо люблячі родини для безпритульних тварин. Наша мета — не просто дати прихисток, а й забезпечити кожному "хвостику" щасливе та повноцінне життя в новій родині.'},{id:3,imageUrl:`${a}/img/about/mobile-photo/mobile1x-photo3.jpg`,text:'"Хатинка Лапок" — це команда професійних ветеринарів, кінологів та десятків волонтерів, які щодня вкладають свою душу та час у турботу про наших підопічних. Ми працюємо 24/7, бо їхнє життя залежить від нас.'},{id:4,imageUrl:`${a}/img/about/mobile-photo/mobile1x-photo4.jpg`,text:"Ми створили безпечний та комфортний простір. Кожна тварина отримує якісне харчування, своєчасну ветеринарну допомогу, проходить соціалізацію та гуляє на спеціально обладнаних майданчиках."},{id:5,imageUrl:`${a}/img/about/mobile-photo/mobile1x-photo5.jpg`,text:"Ваша допомога — безцінна. Ви можете взяти тваринку додому, стати волонтером, допомогти фінансово або інформаційно. Кожен маленький внесок наближає нас до великої мети — світу без безпритульних тварин."}],S=j.map(({id:e,text:s,imageUrl:t})=>`
+      `).join("");g.insertAdjacentHTML("beforeend",s)}const a="/project_team_js2",j=[{id:1,imageUrl:`${a}/src/img/about/mobile-photo/mobile1x-photo1.jpg`,text:"Все почалося у 2015 році з кількох небайдужих людей та одного врятованого собаки. Сьогодні ми — один з найбільших притулків у регіоні, але наша мета незмінна: дати другий шанс тим, кого зрадили."},{id:2,imageUrl:`${a}/src/img/about/mobile-photo/mobile1x-photo2.jpg`,text:'Ми рятуємо, реабілітуємо та знаходимо люблячі родини для безпритульних тварин. Наша мета — не просто дати прихисток, а й забезпечити кожному "хвостику" щасливе та повноцінне життя в новій родині.'},{id:3,imageUrl:`${a}/src/img/about/mobile-photo/mobile1x-photo3.jpg`,text:'"Хатинка Лапок" — це команда професійних ветеринарів, кінологів та десятків волонтерів, які щодня вкладають свою душу та час у турботу про наших підопічних. Ми працюємо 24/7, бо їхнє життя залежить від нас.'},{id:4,imageUrl:`${a}/src/img/about/mobile-photo/mobile1x-photo4.jpg`,text:"Ми створили безпечний та комфортний простір. Кожна тварина отримує якісне харчування, своєчасну ветеринарну допомогу, проходить соціалізацію та гуляє на спеціально обладнаних майданчиках."},{id:5,imageUrl:`${a}/src/img/about/mobile-photo/mobile1x-photo5.jpg`,text:"Ваша допомога — безцінна. Ви можете взяти тваринку додому, стати волонтером, допомогти фінансово або інформаційно. Кожен маленький внесок наближає нас до великої мети — світу без безпритульних тварин."}],S=j.map(({id:e,text:s,imageUrl:t})=>`
    <div class="swiper-slide about-slide">
     <picture>
       <!-- десктоп -->
-      <source media="(min-width: 1440px)" srcset="${a}/img/about/desktop-photo/desktop1x-photo${e}.jpg 1x,
-      ${a}/img/about/desktop-photo/desktop2x-photo${e}.jpg 2x">
+      <source media="(min-width: 1440px)" srcset="${a}/src/img/about/desktop-photo/desktop1x-photo${e}.jpg 1x,
+      ${a}/src/img/about/desktop-photo/desktop2x-photo${e}.jpg 2x">
       <!-- планшет -->
-      <source media="(min-width: 768px)" srcset="${a}/img/about/tablet-photo/tablet1x-photo${e}.jpg 1x,
-      ${a}/img/about/tablet-photo/tablet2x-photo${e}.jpg 2x">
+      <source media="(min-width: 768px)" srcset="${a}/src/img/about/tablet-photo/tablet1x-photo${e}.jpg 1x,
+      ${a}/src/img/about/tablet-photo/tablet2x-photo${e}.jpg 2x">
       <!-- мобілка -->
-      <source media="(min-width: 320px)" srcset="${a}/img/about/mobile-photo/mobile1x-photo${e}.jpg 1x,
-       ${a}/img/about/mobile-photo/mobile2x-photo${e}.jpg 2x">
+      <source media="(min-width: 320px)" srcset="${a}/src/img/about/mobile-photo/mobile1x-photo${e}.jpg 1x,
+       ${a}/src/img/about/mobile-photo/mobile2x-photo${e}.jpg 2x">
       <img src="${t}" alt="about" class="about-img"></img>;
     </picture>
     <div class="about-overlay qwe">
