@@ -1,43 +1,42 @@
 import{a as d,b as R,i as m,S as y,N as v,P as h,K as B,R as C}from"./assets/vendor-DvvmSQtX.js";(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))a(o);new MutationObserver(o=>{for(const i of o)if(i.type==="childList")for(const n of i.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&a(n)}).observe(document,{childList:!0,subtree:!0});function t(o){const i={};return o.integrity&&(i.integrity=o.integrity),o.referrerPolicy&&(i.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?i.credentials="include":o.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function a(o){if(o.ep)return;o.ep=!0;const i=t(o);fetch(o.href,i)}})();async function U(){return(await d.get("https://paw-hut.b.goit.study/api/categories")).data}async function N(e,s,t){return(await d.get("https://paw-hut.b.goit.study/api/animals",{params:{page:e,limit:s,categoryId:t}})).data}const O=document.querySelector(".pets-card-list");O.addEventListener("click",e=>{if(e.target.nodeName!=="BUTTON")return;const s=e.target.closest(".pets-card-items"),t=JSON.parse(decodeURIComponent(s.getAttribute("data-animal"))),a=R.create(`
     <div class="pets-modal modal">
-    
         <div class="pets-container-modal modal-container">
-        <div><button type="button" class="modal-pet-btn-close">
-        <svg class="modal-pet-svg" height="24" width="24"><use href="./public/icon/sprite.svg#icon-icon-close"></use>
-        </svg>
-        </button>
-        </div>
-       
-            <div class="pets-wrapper-modal">
-                <img src="${t.image}" class="pets-icons-modal" alt="${t.shortDescription}"/>
-            </div>
-            <div class="pets-wrapper-modal">
-                <div class="modal-pet-info">
-                    <span class="modal-pet-info-species">${t.species}</span>
-                    <span class="modal-pet-info-name">${t.name}</span>
-                    <div class="modal-pet-info-special-group">
-                        <span>${t.age}</span>
-                        <span>${t.gender}</span>
-                    </div>
-                </div>
-
-                <div class="modal-pet-description">
-                    <div class="modal-pet-description-item">
-                        <span class="modal-pet-title">Опис:</span>
-                        <p class="modal-pet-text">${t.description}</p>
-                    </div>
-                    <div class="modal-pet-description-item">
-                        <span class="modal-pet-title">Здоров’я:</span>
-                        <p class="modal-pet-text">${t.healthStatus}</p>
-                    </div>
-                    <div class="modal-pet-description-item">
-                        <span class="modal-pet-title">Поведінка:</span>
-                        <p class="modal-pet-text">${t.behavior}</p>
-                    </div>
-
-                    <button class="modal-pet-btn btnfirst" data-id="${t._id}" type="button">Взяти додому</button>
+          <div>
+            <button type="button" class="modal-pet-btn-close">
+              <svg class="modal-pet-svg" height="24" width="24">
+                <use href="./icon/sprite.svg#icon-icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="pets-wrapper-modal">
+              <img src="${t.image}" class="pets-icons-modal" alt="${t.shortDescription}"/>
+          </div>
+          <div class="pets-wrapper-modal">
+            <div class="modal-pet-info">
+                <span class="modal-pet-info-species">${t.species}</span>
+                <span class="modal-pet-info-name">${t.name}</span>
+                <div class="modal-pet-info-special-group">
+                    <span>${t.age}</span>
+                    <span>${t.gender}</span>
                 </div>
             </div>
+            <div class="modal-pet-description">
+              <div class="modal-pet-description-item">
+                  <span class="modal-pet-title">Опис:</span>
+                  <p class="modal-pet-text">${t.description}</p>
+              </div>
+              <div class="modal-pet-description-item">
+                  <span class="modal-pet-title">Здоров’я:</span>
+                  <p class="modal-pet-text">${t.healthStatus}</p>
+              </div>
+              <div class="modal-pet-description-item">
+                  <span class="modal-pet-title">Поведінка:</span>
+                  <p class="modal-pet-text">${t.behavior}</p>
+              </div>
+
+              <button class="modal-pet-btn btnfirst" data-id="${t._id}" type="button">Взяти додому</button>
+            </div>
+          </div>
         </div>
     </div>
   `,{closable:!0,onShow:i=>{i.element().querySelector(".modal-pet-btn-close").addEventListener("click",()=>i.close()),document.body.style.overflow="hidden",document.addEventListener("keydown",o)},onClose:()=>{document.body.style.overflow="",document.removeEventListener("keydown",o)}});function o(i){i.key==="Escape"&&a.close()}a.show()});const w=document.querySelector(".loader");function L(){w.classList.remove("is-hidden")}function E(){w.classList.add("is-hidden")}const x=document.querySelector(".pets-nav"),S=document.querySelector(".pets-card-list"),l=document.querySelector(".pets-btn-more");let p=1,$=window.innerWidth<1440?8:9,k=null,q=0;P();b();x.addEventListener("click",e=>{if(e.target.nodeName==="LI"){for(const s of e.target.parentElement.children)s.classList.remove("active");e.target.classList.add("active"),k=e.target.getAttribute("data-id"),S.innerHTML="",p=1,b()}});l.addEventListener("click",()=>{p+=1,b(),l.blur()});async function P(){try{const s=(await U()).map(t=>`<li class="pets-nav-item" data-id="${t._id}">${t.name}</li>`).join("");x.insertAdjacentHTML("beforeend",s)}catch{m.error({title:"",message:"Наші пухнастики сперечаються, хто буде в якій категорії 😸. Повернемо їх незабаром!",position:"topRight"})}}async function b(){try{L();const e=await N(p,$,k);I(e.animals),q=e.totalItems,H()}catch{m.error({title:"",message:"Ой! Наші пухнастики сховалися 🐾. Спробуйте оновити сторінку або поверніться пізніше.",position:"topRight"})}finally{E()}}function H(){q<=p*$?l.classList.add("hide-pets-btn"):l.classList.remove("hide-pets-btn")}function I(e){const s=e.map(t=>`
