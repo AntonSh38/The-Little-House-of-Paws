@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build --base=/project_team_js2/",
+    "build": "vite build --base=/The-Little-House-of-Paws/",
     "preview": "vite preview"
   },
   "devDependencies": {
